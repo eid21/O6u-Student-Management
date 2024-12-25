@@ -1,7 +1,7 @@
 <?php
 session_start();
-include 'header.php';
-include 'dbconn.php';
+include 'includes/header.php';
+include 'includes/dbconn.php';
 if (!isset($_SESSION['admin_id'])) {
     header("Location: instructor_login.php");
     exit();
@@ -88,6 +88,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </body>
 <footer class="text-center mt-5">
-    <p>Designed by محمد عيد الشيخي</p>
 </footer>
 </html>
